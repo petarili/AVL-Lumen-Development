@@ -2,6 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Run Docker deployment
+
+Build Docker image:
+
+docker build -t avl-demo:dev .
+
+Without file sharing:
+
+docker run -itd --rm -p 3002:3000 -e CHOKIDAR_USEPOLLING=true avl-demo:dev
+
+With file sharing:
+
+docker run -itd --rm -v "C:\Users\u19x55\Desktop\Lumen radionica\Demo\sample":/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true avl-demo:dev
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,13 +83,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### Run Docker deployment
-
-Without file sharing:
-
-docker run -itd --rm -p 3002:3000 -e CHOKIDAR_USEPOLLING=true avl-demo:dev
-
-With file sharing:
-
-docker run -itd --rm -v "C:\Users\u19x55\Desktop\Lumen radionica\Demo\sample":/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true avl-demo:dev
