@@ -11,3 +11,7 @@ Pokazuje se na koji način dockerizirati React aplikaciju kako bi se mogla koris
 ### Primjer 2
 
 Pokazuje se primjer kompleksne konfiguracije koja koristi React aplikaciju, mysql, phpadmin te server node u međusobnoj komunikaciji
+
+### Primjer 3
+
+Pokazuje se primjer iz React cjeline iz radionice
